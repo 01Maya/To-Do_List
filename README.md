@@ -20,14 +20,15 @@ Completed tasks can be easily removed from the list using a delete button for a 
 
 ## Tech Stack
 
-
-
 **HTML:** For structuring the app and creating input fields for tasks.
 
 **CSS:** For styling the app with a clean, minimalistic design.
 
 **JavaScript:** For adding, removing, and marking tasks as complete, as well as handling app functionality.
+
 ## Screenshots
+
+![ScreenShot](https://github.com/user-attachments/assets/20a203f1-5fe9-4378-88b6-e1ce2eeadd99)
 
 
 
