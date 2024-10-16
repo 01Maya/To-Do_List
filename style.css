@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#taskInput:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+#addTask {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#addTask:hover {
+    background-color: #2980b9;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #e9ecef;
+}
+
+.task-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3498db;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.task-checkbox:checked {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.task-checkbox:checked::after {
+    content: '✓';
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.task-text {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-task {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.delete-task:hover {
+    color: #e74c3c;
+}
